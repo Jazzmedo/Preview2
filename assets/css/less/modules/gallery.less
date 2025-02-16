@@ -1,0 +1,234 @@
+.pagination.text-left{
+	text-align:left;
+}
+#tb-list-gallery{
+	ul>li{
+		padding:0;
+		position:relative;
+		>a{
+		
+		}
+	}
+}
+body .jws-gallery{
+	
+	.row{margin:0!important;}
+	
+}
+body .jws-gallery .instagram_feed, .tb-list-gallery{
+	padding-left: 15px;
+	a{
+		background-size:cover!important;
+	}
+}
+
+// gallery css for js
+
+.instagram_feed, .tb-list-gallery{
+	position: relative;
+	height: auto;
+}
+
+.instagram_feed ul, .tb-list-gallery ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.instagram_feed ul:before, .tb-list-gallery ul:before,
+.instagram_feed ul:after, .tb-list-gallery ul:after{
+	content: '';
+    display: table;
+}
+
+.instagram_feed ul:after, .tb-list-gallery ul:after {
+    clear: both;
+}
+
+.instagram_feed ul, .tb-list-gallery ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
+
+.instagram_feed ul li, .tb-list-gallery ul li {
+	-webkit-perspective: 400px;
+	-moz-perspective: 400px;
+	-o-perspective: 400px;
+	-ms-perspective: 400px;
+	perspective: 400px;	
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	background: transparent;
+}
+
+.instagram_feed ul li{margin:0 9px 9px 0}
+.instagram_feed ul li > a, .tb-list-gallery ul li > a{
+	display: block;
+	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #333;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+
+/* Shadow style */
+.instagram_feed:after, .tb-list-gallery:after,
+.instagram_feed:before, .tb-list-gallery:before{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.instagram_feed:after, .tb-list-gallery:after{
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.instagram_feed:after, .tb-list-gallery-loading:after,
+.instagram_feed:before, .tb-list-gallery-loading:before{
+	display: none;
+}
+
+.ri-loading-image{
+	display: none;
+}
+
+.instagram_feed .ri-loading-image, .tb-list-gallery-loading .ri-loading-image{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin: 100px 0 0 -15px;
+	display: block;
+}
+.jws-list-gallery{
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		li{
+			margin-bottom:30px;
+			position:relative;
+			overflow:hidden;
+			border-radius:7px;
+			z-index:2;
+			.tb-gallery-image{
+				height:405px;
+				
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+			.colorbox-wrap{
+				//display:none;
+			}
+			.tb-info-block{
+				position:absolute;
+				padding-bottom:20px;
+				width:100%;
+				bottom:0px;
+				background: url(assets/images/bg_shadown.png) no-repeat;
+				background-size:cover;
+				padding-left:20px;
+				.blog-title,.author-name{
+					color:#fff;
+					margin-bottom:0;
+				}
+			}
+		}
+	}
+	
+}
+.tb-gallery-footer .btn-pre-v2{
+	font-family:dosis;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+}
+.tb-list-gallery-rotate {
+  .gallery {
+        box-shadow: 0px 0 6px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin-bottom: 30px;
+    transition: transform .8s ease-in-out;
+    -webkit-transition: transform .8s ease-in-out;
+    background: #ffffff;
+    .tb-info-block {
+   display: flex;
+    align-items: center;
+    padding: 8px 0;
+    text-align: center;
+    justify-content: center;
+      .blog-title {
+           font-weight: 400;
+    margin-bottom: 0; 
+      } 
+      .author-name {
+           padding-left: 15px;
+               margin-top: 4px;
+               position: relative;
+               &:after {
+                content:"";
+                  content: "";
+                    left: 7px;
+                    top: 2px;
+                    width: 1px;
+                    height: 15px;
+                    background: #3f3f3f;
+                    transform: rotate(25deg);
+                    -webkit-transform: rotate(25deg);
+                    position: absolute;
+               } 
+      }
+    }
+    &:hover {
+        transform: rotate(6deg);
+        -webkit-transform: rotate(6deg);
+    }
+  }  
+}

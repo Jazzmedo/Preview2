@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preschool - Kids Education Center">
+    <meta name="theme-color" content="#ffca00">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Preschool</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="parallax.js" defer></script>
+    <script src="scroll-animations.js" defer></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+        .custom-font {
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+
+        /* Fix horizontal scroll issue */
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        .bg-palms-pattern {
+            background-image: url('http://192.168.1.23:8080/img/Home/Palms_Transparent_Pattern.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile menu button -->
+    <header id="header" class="fixed top-0 left-0 w-full bg-white py-4 shadow-md transition-all duration-300">
+        <div class="container mx-auto flex items-center justify-center gap-12 px-6">
+            <!-- Logo -->
+            <img src="img/Logo/pglogo.png" alt="Preschool Logo" class="w-20 h-20">
+
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex space-x-6 text-orange-500 font-semibold text-base">
+                    <li><a href="index.html"
+                            class="hover:text-orange-700 hover:underline decoration-2 underline-offset-4">Home</a></li>
+                    <li><a href="our_program.html" class="text-orange-700 underline decoration-2 underline-offset-4">Our Program</a>
+                    </li>
+                    <li><a href="our_promise.html" class="hover:text-orange-700 hover:underline decoration-2 underline-offset-4">Our
+                            Promise</a></li>
+                    <li><a href="#" class="hover:text-orange-700 hover:underline decoration-2 underline-offset-4">Our
+                            Classroom</a></li>
+                    <li><a href="#" class="hover:text-orange-700 hover:underline decoration-2 underline-offset-4">Our
+                            Curriculum</a></li>
+                    <li><a href="#"
+                            class="hover:text-orange-700 hover:underline decoration-2 underline-offset-4">Blog</a></li>
+                    <li><a href="#"
+                            class="hover:text-orange-700 hover:underline decoration-2 underline-offset-4">Contact Us</a>
+                    </li>
+                    <li><a href="#" class="hover:text-orange-700 hover:underline decoration-2 underline-offset-4">APPLY
+                            NOW</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <div class="w-full h-20 bg-white"></div>
+
+
+
+
+    <main>
+
+        <section class="w-full py-16 px-6 bg-white text-center">
+            <!-- Buttons for Different Programs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-6 relative">
+                <div class="relative">
+                    <button onclick="updateContent(0)" id="btn-0"
+                        class="program-btn bg-orange-500 text-white px-4 py-2 rounded-md font-semibold relative">
+                        Infants (0-18 months)
+                    </button>
+                    <div id="arrow-0"
+                        class="arrow-indicator hidden absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-4 h-4 bg-orange-500 rotate-45">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <button onclick="updateContent(1)" id="btn-1"
+                        class="program-btn bg-teal-300 text-white px-4 py-2 rounded-md font-semibold relative">
+                        Toddlers (18 months - 3 years)
+                    </button>
+                    <div id="arrow-1"
+                        class="arrow-indicator hidden absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-4 h-4 bg-teal-300 rotate-45">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <button onclick="updateContent(2)" id="btn-2"
+                        class="program-btn bg-red-500 text-white px-4 py-2 rounded-md font-semibold relative">
+                        Pre-Primary (3-5 years)
+                    </button>
+                    <div id="arrow-2"
+                        class="arrow-indicator hidden absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-4 h-4 bg-red-500 rotate-45">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <button onclick="updateContent(3)" id="btn-3"
+                        class="program-btn bg-teal-300 text-white px-4 py-2 rounded-md font-semibold relative">
+                        School Age (5+ years)
+                    </button>
+                    <div id="arrow-3"
+                        class="arrow-indicator hidden absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-4 h-4 bg-teal-300 rotate-45">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <button onclick="updateContent(4)" id="btn-4"
+                        class="program-btn bg-orange-500 text-white px-4 py-2 rounded-md font-semibold relative">
+                        Summer Program (Grades 1-6)
+                    </button>
+                    <div id="arrow-4"
+                        class="arrow-indicator hidden absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-4 h-4 bg-orange-500 rotate-45">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Box (Updates Based on Selection) -->
+            <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 text-blue-500 text-lg leading-relaxed">
+                <p id="program-text">
+                    In our infant program, we create a nurturing environment where babies are encouraged to explore the
+                    world around them through their senses. Guided by the Montessori principle of the Absorbent Mind,
+                    infants naturally absorb language, movement, and emotional connections, laying the foundation for
+                    future learning. Every detail of the space is thoughtfully designed to support their development,
+                    fostering trust, security, and early independence.
+                </p>
+            </div>
+        </section>
+
+
+
+        <section class="relative w-full py-16 px-6 bg-cover bg-center bg-no-repeat"
+            style="background-image: url('img/prog/ourprogram.png');">
+
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+            <!-- Content Wrapper -->
+            <div class="relative max-w-6xl mx-auto text-white text-left pl-6">
+
+                <!-- Section Title -->
+                <h2 class="text-4xl font-bold mb-4">Montessori +</h2>
+                <p class="text-base max-w-4xl mb-10">
+                    Our modernized Montessori program is designed to meet the needs of today’s U.S. educational system
+                    while building on the traditional principles of Maria Montessori. Four core elements of such a
+                    program are:
+                </p>
+
+                <!-- Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+
+                    <!-- Left Column -->
+                    <div class="space-y-8">
+
+                        <!-- Individualized Learning Paths -->
+                        <!-- Individualized Learning Paths -->
+                        <div class="flex items-start gap-6 text-sm">
+                            <!-- Icon Container -->
+                            <div
+                                class="w-24 h-24 flex-shrink-0 flex items-center justify-center rounded-full border-4 border-white bg-transparent hover:bg-yellow-500 transition duration-300 shadow-lg">
+                                <img src="img/prog/OUR_PROGRAM_ICONS_SVG/13.svg" alt="Learning Path"
+                                    class="w-16 h-16 object-contain">
+                            </div>
+
+                            <!-- Text Content -->
+                            <div class="w-full max-w-lg">
+                                <h3 class="text-lg font-bold">Individualized Learning Paths</h3>
+                                <p class="text-gray-300">
+                                    Palm Grove incorporates modern adaptations through tracking progress to analyze your
+                                    child’s strengths and struggles, and offering tailored learning experiences that
+                                    bear in mind what he or she will need moving onward to other learning environments.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Collaborative Learning -->
+                        <div class="flex items-start gap-6 text-sm">
+                            <!-- Icon Container -->
+                            <div
+                                class="w-24 h-24 flex-shrink-0 flex items-center justify-center rounded-full border-4 border-white bg-transparent hover:bg-yellow-500 transition duration-300 shadow-lg">
+                                <img src="img/prog/OUR_PROGRAM_ICONS_SVG/16.svg" alt="Collaboration"
+                                    class="w-16 h-16 object-contain">
+                            </div>
+
+                            <!-- Text Content -->
+                            <div class="w-full max-w-lg">
+                                <h3 class="text-lg font-bold">Collaborative Learning and Social-Emotional Development
+                                </h3>
+                                <p class="text-gray-300">
+                                    Emphasizing collaborative learning (even in groups larger than 2 which traditional
+                                    Montessori prefers), for the purpose of developing social-emotional skillsets needed
+                                    for the K-12 environment.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="space-y-8">
+
+                        <!-- STEM and Technology -->
+                        <div class="flex items-start gap-6">
+                            <!-- Icon Container -->
+                            <div
+                                class="w-24 h-24 flex-shrink-0 flex items-center justify-center rounded-full border-4 border-white bg-transparent hover:bg-yellow-500 transition duration-300 shadow-lg">
+                                <img src="img/prog/OUR_PROGRAM_ICONS_SVG/14.svg" alt="STEM"
+                                    class="w-16 h-16 object-contain">
+                            </div>
+
+                            <!-- Text Content -->
+                            <div class="w-full max-w-lg">
+                                <h3 class="text-lg font-bold">STEM and Technology Integration</h3>
+                                <p class="text-gray-300 text-sm">
+                                    Integrating STEM (Science, Technology, Engineering, and Mathematics) with hands-on
+                                    learning while maintaining Montessori’s emphasis on exploration, manipulation, and
+                                    self-discovery, using modern technology (tablets, games, and robotics kits).
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- Cultural Awareness -->
+                        <div class="flex items-start gap-6 text-sm">
+                            <!-- Icon Container -->
+                            <div
+                                class="w-24 h-24 flex-shrink-0 flex items-center justify-center rounded-full border-4 border-white bg-transparent hover:bg-green-500 transition duration-300 shadow-lg">
+                                <img src="img/prog/OUR_PROGRAM_ICONS_SVG/15.svg" alt="Global Citizenship"
+                                    class="w-16 h-16 object-contain">
+                            </div>
+
+                            <!-- Text Content -->
+                            <div class="w-full max-w-lg">
+                                <h3 class="text-lg font-bold">Cultural Awareness and Global Citizenship</h3>
+                                <p class="text-gray-300">
+                                    In response to global interconnectedness, we emphasize cultural awareness,
+                                    diversity, and global citizenship. Our themes include units on global
+                                    sustainability, environmental stewardship, and international cooperation, with an
+                                    emphasis on understanding the interconnectedness of people and the planet.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="bg-gray-100 py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <!-- Section Title -->
+                <h2 class="text-4xl font-bold text-black mb-10 text-left">Pricing Plan</h2>
+        
+                <!-- Pricing Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+                    <!-- Full Day Session Card -->
+                    <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+                        <!-- Card Content (Text on Left) -->
+                        <div class="w-2/3 p-6 text-left">
+                            <h3 class="text-2xl font-bold text-orange-500">Full Day Session</h3>
+                            <p class="text-gray-600 mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                            </p>
+                            
+                            <ul class="mt-4 space-y-2 text-gray-500">
+                                <li>✅ 8 am - 12 Noon Care</li>
+                                <li>✅ 3 Meals a Day</li>
+                                <li>✅ Science Classes</li>
+                                <li>✅ 2 Educators</li>
+                            </ul>
+        
+                            <button class="mt-6 px-5 py-2 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition">
+                                Choose Plan
+                            </button>
+                        </div>
+        
+                        <!-- Image Placeholder (Image on Right) -->
+                        <div class="w-1/3 bg-gray-300 flex items-center justify-center">
+                            <img src="img/prog/blg6-287x396.jpg" alt="Full Day Image" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+        
+                    <!-- Morning Session Card -->
+                    <div class="flex bg-white shadow-lg rounded-lg overflow-hidden">
+                        <!-- Card Content (Text on Left) -->
+                        <div class="w-2/3 p-6 text-left">
+                            <h3 class="text-2xl font-bold text-orange-500">Morning Session</h3>
+                            <p class="text-gray-600 mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                            </p>
+                            
+                            <ul class="mt-4 space-y-2 text-gray-500">
+                                <li>✅ 8 am - 12 Noon Care</li>
+                                <li>✅ 3 Meals a Day</li>
+                                <li>✅ Science Classes</li>
+                                <li>✅ 2 Educators</li>
+                            </ul>
+        
+                            <button class="mt-6 px-5 py-2 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition">
+                                Choose Plan
+                            </button>
+                        </div>
+        
+                        <!-- Image Placeholder (Image on Right) -->
+                        <div class="w-1/3 bg-gray-300 flex items-center justify-center">
+                            <img src="img/prog/blg4-287x396.png" alt="Morning Session Image" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <h2>Kids School</h2>
+                    <p>Email</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectet adip elit sed do eiusmod tempor.</p>
+                <div class="contact-info">
+                    <p><i class="fa fa-map-marker"></i> Office Box 97845 Baker street 567 Los- Angeles, Clifornia, US.
+                    </p>
+                    <p><i class="fa fa-envelope"></i> Support@preschool.com</p>
+                    <p><i class="fa fa-phone"></i> 1.800.123.4567 - 1.800.123.4566</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Latest Courses</h3>
+                <div class="latest-courses">
+                    <div class="course-item">
+                        <p>Drawing, Painting Lessons</p>
+                        <span>May 10, 2019</span>
+                    </div>
+                    <div class="course-item">
+                        <p>HTML5 & CSS3 Lessons</p>
+                        <span>May 10, 2019</span>
+                    </div>
+                    <div class="course-item">
+                        <p>How To Use Computer</p>
+                        <span>May 10, 2019</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="#" class="instagram">Instagram</a>
+                    <a href="#" class="twitter">Twitter Feeds</a>
+                </div>
+            </div>
+        </div>
+        <div class="lst">
+            <p>© 2024 Preschool. Developed by JWSThemes. All rights reserved.</p>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="optimizations.js" defer></script>
+
+    <script>
+        // Program descriptions
+        const programDescriptions = [
+            "In our infant program, we create a nurturing environment where babies are encouraged to explore the world around them through their senses. Guided by the Montessori principle of the Absorbent Mind, infants naturally absorb language, movement, and emotional connections, laying the foundation for future learning. Every detail of the space is thoughtfully designed to support their development, fostering trust, security, and early independence.",
+
+            "Our toddler program focuses on harnessing the Sensitive Periods of language, movement, and socialization, providing opportunities for exploration and self-discovery. In a carefully prepared environment, toddlers engage in hands-on activities that promote practical life skills, like dressing, feeding, and cleaning, empowering them to take pride in their abilities. With a focus on the Control of Error, children are gently guided to solve problems independently, fostering confidence and autonomy.",
+
+            "At this stage, children are encouraged to deepen their exploration, building foundational academic skills in language, math, and sensory work. Our prepared environment invites children to engage with purposeful activities that foster independence and critical thinking, while practical life exercises teach responsibility and self-sufficiency. During their Sensitive Periods for social development and order, children learn to collaborate and make choices, setting the stage for lifelong learning.",
+
+            "In our school-age program, children continue to grow through self-directed learning in a rich, hands-on environment that prepares them for the next educational steps. Emphasizing practical life skills, critical thinking, and mastery of core academic concepts, they work at their own pace, with built-in opportunities for self-correction through the Control of Error. As they navigate their learning environment, children build confidence, responsibility, and a deep love of learning that will guide them in both Montessori and traditional school settings.",
+
+            "Our Summer Program for grades 1 through 6 offers a dynamic, hands-on learning experience that blends Montessori principles with fun, interactive activities. Designed to keep children engaged over the summer months, the program emphasizes creativity, exploration, and practical life skills while providing a flexible, student-driven environment. With a focus on building independence, fostering teamwork, and sparking curiosity, our summer sessions offer a refreshing and enriching way for children to continue their educational journey in a relaxed, supportive atmosphere."
+        ];
+
+        function updateContent(index) {
+            document.getElementById("program-text").innerText = programDescriptions[index];
+
+            // Hide all arrows using only elements with the `.arrow-indicator` class
+            document.querySelectorAll(".arrow-indicator").forEach(arrow => {
+                if (!arrow.classList.contains("hidden")) {
+                    arrow.classList.add("hidden");
+                }
+            });
+
+            // Show the selected arrow
+            const selectedArrow = document.getElementById(`arrow-${index}`);
+            if (selectedArrow) {
+                selectedArrow.classList.remove("hidden");
+            }
+        }
+
+        // Set default active button
+        updateContent(0);
+    </script>
+
+
+
+
+</body>
+
+</html>

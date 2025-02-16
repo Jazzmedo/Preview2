@@ -1,0 +1,55 @@
+.ro-brand-logo-wrap {
+	max-width: 235px;
+	height: 180px;
+	line-height: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #fff;
+	.ro-brand-logo {
+		position: relative;
+		width: 100px;
+		height: 105px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+		vertical-align: middle;
+        display: inline-block;
+		> img {
+			.easing-animation;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: auto;
+			height: auto;
+			&:first-child {
+				opacity: 1;
+			}
+			&:last-child {
+				opacity: 0;
+			}
+		}
+		&:hover {
+			> img {
+				&:first-child {
+					opacity: 0;
+				}
+				&:last-child {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.col-20{
+	width: 20% !important;
+	background-color: #fff;
+	.easing-animation;
+
+}
+@media (max-width: 767px){
+	body .col-20 {
+		width: 50% !important;
+		float: left;
+	}
+}

@@ -1,0 +1,226 @@
+@padding-h: 40px;
+@padding-v: 15px;
+
+.btn-shop-now{
+	color: #fff;
+	&:hover{
+		color: @jws_theme_primary_color;
+	}
+}
+.btn-pre-v2{
+	background: url(assets/images/bg-btn-v2.png) no-repeat;
+	font-family: Roboto;
+	font-size:14px;
+	text-transform:uppercase;  
+	display: inline-block;
+    text-align: CENTER;
+    width: 159px;
+    height: 37px;
+    line-height: 37px;
+	&:hover{
+		color:@main-color;
+	}
+}
+
+.btnviewmore:hover{
+    border-color:@jws_theme_primary_color;
+}
+.btn.btn-view-all {
+    border: 1px solid #FFF;
+    color: #FFF;
+    padding: 9px 42px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 30px;
+
+	&:hover{
+		border-color: @jws_theme_primary_color;
+		background: @jws_theme_primary_color;
+	}
+}
+.horizontal-strokes-btn-view-more{
+	position: relative;
+	&:before, &:after{
+		background: #fff none repeat scroll 0 0;
+		content: "";
+		height: 1px;
+		position: absolute;
+		top: 50%;
+		width: 43%;
+		@media (min-width: 992px) and (max-width: 1200px - 1) {
+			width: 41%;
+		}
+		@media (min-width: 768px) and (max-width: 992px - 1) {
+			width: 38%;
+		}
+		@media (max-width: 768px - 1) {
+			width: 37%;
+		}
+		@media (max-width: 640px - 1) {
+			width: 32%;
+		}
+		@media (max-width: 480px - 1) {
+			width: 26%;
+		}
+		@media (max-width: 360px - 1) {
+			width: 24%;
+		}
+	}
+	&:before{
+		left: 0;
+	}
+	&:after{
+		right: 0;
+	}
+}
+
+.ro-btn {
+    .easing-animation;
+    display: inline-block;
+    padding: @padding-v @padding-h;
+    font-size: 12px;
+    font-weight: 700;
+    outline: none;
+    word-spacing: 2px;
+    line-height: 1.2;
+    text-align: center;
+    background-color: transparent;
+    border:0;
+}
+
+.ro-btn-bd(@thick, @bd-color) {
+    .ro-btn;
+    padding: (@padding-v - @thick) (@padding-h - @thick);
+    border: 1px solid @bd-color;
+}
+
+.ro-btn-animation-delay(@time) {
+    -ms-animation-delay: @time;
+	-ms-transition-delay: @time;
+	-moz-animation-delay: @time;
+	-moz-transition-delay: @time;
+	-webkit-animation-delay: @time;
+	-webkit-transition-delay: @time;
+}
+
+.ro-btn-1 {
+    .ro-btn;
+    background-color: @jws_theme_primary_color;
+    color: @light-color;
+
+    &:hover, &:focus {
+        background-color: @dark-color;
+        color:@light-color;
+    }
+}
+
+.ro-btn-2 {
+    .ro-btn;
+    background-color: @dark-color;
+    color: @light-color;
+
+    &:hover, &:focus {
+        background-color: @jws_theme_primary_color;
+        color:@light-color;
+    }
+}
+.ro-btn-3 {
+    .ro-btn;
+    background-color: @light-color;
+
+    &:hover, &:focus {
+        background-color: @jws_theme_primary_color;
+        color:@light-color;
+    }
+}
+
+.ro-btn-bd-1 {
+    .ro-btn-bd(1px, @dark-color);
+
+    &:hover, &:focus {
+        background-color: @jws_theme_primary_color;
+        border-color: @jws_theme_primary_color;
+        color: @light-color;
+    }
+}
+
+.ro-btn-bd-2 {
+    .ro-btn-bd(1px, @dark-color);
+    background-color: @light-color;
+
+    &:hover, &:focus {
+        background-color: @jws_theme_primary_color;
+        border-color: @jws_theme_primary_color;
+        color: @light-color;
+    }
+}
+
+.ro-btn-bdr-1 {
+    .ro-btn-bd(1px, @dark-color);
+    border-radius: 20px;
+    background-color: @lightgray-color;
+}
+
+.ro-btn-bdr-2 {
+    .ro-btn-bd(1px, @dark-color);
+    background-color: @jws_theme_primary_color;
+    border-radius: 20px;
+}
+.ro-btn-circle{
+	// border: 1px solid #c5c5c5;
+    color: #fff;
+    display: inline-block;
+	vertical-align: middle;
+    height: 40px;
+	width: 40px;
+	text-align: center;
+    line-height: 40px;
+    position: relative;
+    background-color: #393939;
+    .transition(all 300ms ease-in-out 0ms);
+	&:hover{
+		background: @jws_theme_primary_color;
+		// border-color: @jws_theme_primary_color;
+		color: #fff;
+	}
+}
+.diamond-db( @fontSize:12px; @size:35px; @bfColor:#ddd; @afColor:#e9e9e9 ){
+    position: relative;
+    font-size: @fontSize;
+    display: inline-block;
+    text-align: center;
+    width:@size;
+    height:@size;
+    line-height: @size;
+	border-radius: 50%;
+    &:before,&:after{
+        .easing-animation;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+        .tb-abs;
+        border:1px solid @bfColor;
+		border-radius: 50%;
+    }
+    &:after{
+        width:75%;
+        height: 75%;
+        top:12.5%;
+        left:12.5%;
+        border-color:@afColor;
+        z-index: -1;
+    }
+    &:hover {
+        color: #fff;
+        &:before,&:after{
+            border-color: @jws_theme_primary_color;
+        }
+        &:after{
+            background-color: @jws_theme_primary_color;
+        }
+        .fa{
+            .swing;
+        }
+    }
+}

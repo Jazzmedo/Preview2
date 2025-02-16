@@ -1,0 +1,127 @@
+@media(min-width:@screen-md){
+	.jws-rev-h1{
+		  margin-top: -31px !important;
+	}
+}
+.jws-rev-h1{
+	.wpb_content_element{
+		margin-bottom:0;
+	}
+
+}
+.jws-border-custom{
+	z-index: 2;
+    position: relative;
+}
+
+// more style for all page
+
+@media(min-width:@screen-md){
+	.title-bar{
+		margin-top: -35px;
+	}
+}
+.jws_theme_tab{
+	.tb-blog.list_tree .list_tree_item{
+		&:nth-child(1),&:nth-child(2){
+			article .blog-info .tb-blog-date{
+				color:#222222;
+			}
+		}
+		article .blog-info .tb-blog-date{
+			color:#222;
+			font-size:14px;
+			font-weight:600;
+			time{
+				position:relative;
+				&:after{
+					content: "\f106 \f106 \f106 \f106 \f106";
+					display: block;
+					font-size: 11px;
+					text-transform: uppercase;
+					color: #222;
+					font-family: FontAwesome;
+					line-height: 11px;
+					margin-bottom: 12px;
+					position:absolute;
+					left:0;
+				}
+			}
+		}
+	}
+}
+.slider5 {
+    .rev_slider{ 
+      	.tparrows{ 
+      	 &:hover {
+      	   	background-color:@second-color;  
+      	 }
+      	}  
+    }
+}
+@media(max-width:767px) {
+  body .rev_slider:hover {
+    .tparrows{ 
+      &.tp-leftarrow{ 
+        left:5%!important;
+      }  
+    }
+  }  
+}
+.rev_slider{
+	.tparrows{
+		width: 42px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		background-color: #222222;
+		color: #fff;
+		border-radius: 50%;
+		font-size: 18px;
+		.easing-animation;
+		&:hover{
+			background-color:@main-color;
+		}
+		&:before{
+			font-family:FontAwesome;
+			content:"\f178";
+		}
+		&.tp-leftarrow{
+			border-right: 2px solid #9b9b9b;
+			&:before{
+				content:"\f177";
+			}
+		}
+		&.tp-rightarrow{
+			border-left: 2px solid #9b9b9b;
+		}
+	}
+	&:hover{
+		.tparrows{
+			&.tp-leftarrow{
+				left:3%!important;
+			}
+			&.tp-rightarrow{
+				left:98%!important;
+			}
+		}
+	}
+	.hermes{
+		.tp-bullet{
+			box-shadow:inset 0 0 0 2px #fff;
+			&:hover,&:after{
+				background-color:transparent;
+			}
+			&.selected,&:hover{
+				box-shadow:inset 0 0 0 2px @main-color;
+			}
+		}
+	}
+	.btn-pre-v2{
+		font-family: Dosis;
+		font-size: 16px;
+		&:hover{
+			color:#fff;
+		}
+	}
+}

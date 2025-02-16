@@ -1,0 +1,112 @@
+/* Reset */
+@overlay-zindex: 512;
+@overlaybg-zindex: -1;
+
+a, a:hover, a:focus, a:active, a.active {
+    .easing-animation;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    &.ro-list-inline-block {
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+/* Special div */
+.ro-nopadding {
+    padding: 0 !important;
+}
+
+.ro-overlay {
+    .overlay(@overlay-zindex);
+}
+
+.ro-overlay-bg {
+    .overlay(@overlaybg-zindex);
+}
+
+.ro-col-nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.ro-relative {
+    position: relative;
+}
+
+.ro-absolute {
+    position: absolute;
+}
+
+.ro-fixed {
+    position: fixed;
+}
+
+.ro-middle {
+    .middle;
+}
+
+.ro-center-block {
+    .center-block;
+}
+
+.ro-center {
+    .center;
+}
+
+.ro-ab-bottom {
+    .ab-bottom;
+}
+
+.ro-bottom {
+    .bottom;
+}
+
+.ro-ab-center {
+    .ab-center;
+}
+
+//middle using table cell
+.ro-cell-vertical-wrapper {
+ 
+    display: table;
+
+    .ro-cell-middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .ro-cell-bottom {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+
+    .ro-cell-top {
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+.flip-horizontal{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+
+/* Video */
+
+.ro-video-bg {
+    .ab-center;
+    position: relative;
+    width: 100%;
+
+    .ro-video-h & {
+        width: auto;
+        height: 100%;
+    }
+}

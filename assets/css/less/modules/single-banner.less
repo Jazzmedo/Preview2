@@ -1,0 +1,39 @@
+.ct-single-banner{
+	position: relative;
+	h2{
+		position: absolute;
+	    top: 50%;
+	    font-family: @jws_theme_google_font_1;
+	    transform: translateY(-50%);
+	    text-align: center;
+	    width: 100%;
+	    font-size: 30px;
+	    letter-spacing: 0.7em;
+	    line-height: 17px;
+	    color: #fff;
+	    z-index: 5;
+	    line-height: 22px;
+	}
+	&:hover{
+		&:before{
+			animation: effZoom 1s forwards;
+			border-color: @jws_theme_primary_color;
+		}
+		h2{
+			color:@jws_theme_primary_color;
+		}
+	}
+
+}
+
+@media (max-width:767px){
+	.ct-single-banner h2{
+		font-size: 20px;
+	}
+}
+
+@media (max-width:480px){
+	.ct-single-banner h2{
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,83 @@
+
+input, textarea, select{
+	background: rgba(255,555,255,.9);
+	border: 1px solid #D3D3D3;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	color: #777;
+	transition: .3s;
+	-webkit-transition: .3s;
+}
+input[type="checkbox"], input[type="radio"]{
+	width: auto;
+}
+input:focus, input:target,
+textarea:focus, textarea:target,
+select:focus, select:target{
+	border-color: #FC5E49;
+	color: #333;
+}
+
+button, 
+input[type="button"], input[type="submit"],
+.btn{
+	display: inline-block;
+	background: none;
+	vertical-align: top;
+	border-radius: 1px;
+	color: #999;
+	border: solid 1px;
+	line-height: 20px;
+	transition: .3s;
+	-webkit-transition: .3s;
+}
+.btn-contact-form-custom{
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+code{ white-space: normal; }
+
+.text-large h1{ font-size: 600% }
+.text-large h2{ font-size: 500% }
+.text-large h3{ font-size: 400% }
+.text-large h4{ font-size: 300% }
+.text-large h5{ font-size: 200% }
+.text-large h6{ font-size: 100% }
+.border-box{
+	border: 1px solid #222;
+}
+
+
+/* AMIMATE GENERAL */
+@keyframes slideUp{
+	from{ opacity: 0; transform: translateY(20px); }
+	to{  opacity: 1; transform: translateY(0px); }
+}
+@-webkit-keyframes slideUp{
+	from{ opacity: 0; -webkit-transform: translateY(20px); }
+	to{  opacity: 1; -webkit-transform: translateY(0px); }
+}
+@keyframes slideDown{
+	from{ opacity: 1; transform: translateY(0px); }
+	to{  opacity: 0; transform: translateY(20px); }
+}
+@-webkit-keyframes slideDown{
+	from{ opacity: 1; -webkit-transform: translateY(0px); }
+	to{  opacity: 0; -webkit-transform: translateY(20px); }
+}
+
+@keyframes menuMagazine{
+	from{ opacity: 0; top: -20px; }
+	to{  opacity: 1; top: 0px; }
+}
+@-webkit-keyframes menuMagazine{ 
+	from{ opacity: 0; top: -20px; }
+	to{  opacity: 1; top: 0px; }
+}
+
+@keyframes scrollbtnEffect{
+	from{ top: 0; }
+	to{ top: 20px; }
+}

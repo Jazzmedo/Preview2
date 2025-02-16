@@ -1,0 +1,130 @@
+.jws-event {
+	h1{
+		&:after{
+			display:inline-block;
+			content:"";
+			height:4px;
+			width:40px;
+			border-top:1px solid @main-color;
+			border-bottom:1px solid @main-color;
+			margin-left:20px;
+			vertical-align:middle;
+		}
+	}
+	.jws-countdown-js{
+		margin:55px 0;
+		.jws-box-countdown{
+			width:120px;
+			height:85px;
+			padding-top:15px;
+			display:inline-block;
+			text-align:center;
+			font-family:Dosis;
+			font-weight:bold;
+			font-size:18px;
+			color:@main-color;
+			margin-right:18px;
+			background: url(assets/images/bg-count-down.png) no-repeat;
+			
+			background-size: contain;
+			>span{
+				font-size:26px;
+			}
+			&:last-child{
+				margin-right:0px;
+			}
+		}
+	}
+	.btn-pre-v2{
+		color:#fff;
+		font-size:16px;
+	}
+	.jws-date-event{
+		color:#222222;
+		margin-left:38px;
+		text-transform:uppercase;
+	}
+	.col-left{margin-top:110px;}
+	&.tpl2{
+		color:#fff;
+		background-color: rgba(0,0,0,0.7);
+		.col-left{
+			margin-top:57px;
+		}
+		h1{
+			color:#fff;
+			text-transform:uppercase;
+			&:after{
+				display:none;
+			}
+		}
+		.jws-countdown-js{
+			.jws-box-countdown{
+				background:initial;
+				width:100px;
+				height:100px;
+				padding-top:10px;
+				text-align:Center;
+				border:2px solid #fff;
+				border-radius:50%;
+				color:#fff;
+				font-size:16px;
+				line-height:initial;
+				>span{
+					font-size:36px;
+					line-height:initial;
+				}
+			}
+		}
+	}
+    &.tpl3 {
+      .col-left {
+        text-align:left !important;
+        .jws-event-content {
+            p{
+                margin-bottom: 1px !important;    
+            }
+        }
+        h1 {
+                font-size: 36px;
+    margin-bottom: 36px;
+        letter-spacing: 0.4px;
+            &:after {
+                background:@second-color;
+                display:block;
+                border:none;
+                    margin: 0;
+    margin-top: 13px;
+    height: 1px;
+            }
+        }
+        .jws-countdown-js {
+            margin: 28px 0;
+           .jws-box-countdown {
+            background:@second-color;
+            color: #ffffff;
+            border-radius: 100%;
+            width: 120px;
+            height: 120px;
+            padding: 0;
+            padding-top: 35px;
+            margin-right: 27px;
+        span {
+            font-size:36px;
+        }
+        p{
+            font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 6px;
+    font-weight: 400;
+        }
+           } 
+        }
+      }  
+    }
+}
+@media(min-width:@screen-lg){
+	.jws-event.tpl2 .jws-countdown-js .jws-box-countdown{
+		margin-right: 57px;
+	}
+}

@@ -1,0 +1,116 @@
+.ro-font-regular {
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 25px;
+}
+
+.ro-light-text {
+    font-weight: 400;
+}
+
+.ro-hr-heading {
+    text-align: center;
+
+    &:after {
+        .center-block;
+        content: " ";
+        display: block;
+        width: 30px;
+        margin-top: 15px;
+        height: 0;
+        border-top: 1px solid @dark-color;
+    }
+
+    &.ro-left {
+        text-align: left;
+
+        &:after {
+            margin-left: 0;
+        }
+    }
+
+    &.ro-right {
+        text-align: right;
+
+        &:after {
+            margin-right: 0;
+        }
+    }
+}
+
+.ro-hr {
+    .center-block;
+    width: 80%;
+    border-top: 1px solid @gray-color;
+    margin: 0 auto;
+
+    &.ro-full {
+        width: 100%;
+    }
+
+    .ro-color-light {
+        border-color: @light-color;
+    }
+}
+
+p {
+    margin-bottom: 25px;
+}
+.ro-font-size-1 {
+    font-size: @font-size-1;
+}
+.ro-font-size-2 {
+    font-size: @font-size-2;
+}
+.ro-font-size-3 {
+    font-size: @font-size-3;
+}
+.ro-font-size-4 {
+    font-size: @font-size-4;
+}
+.ro-font-size-5 {
+    font-size: @font-size-5;
+}
+.ro-font-size-6 {
+    font-size: @font-size-6;
+}
+
+::selection {
+    background: @main-color;
+    color: @light-color;
+}
+
+.ro-ellipsis {
+    overflow: hidden;
+}
+
+.ro-quote-content {
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 400;
+
+    q:before, q:after {
+        font-style: italic;
+        font-size: 30px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+
+    q:before {
+        content: open-quote;
+    }
+
+    q:after {
+        content: close-quote;
+    }
+
+    .ro-author-name {
+        padding-top: 20px;
+        font-weight: 700;
+        text-align: right;
+        color: @main-color;
+    }
+}
