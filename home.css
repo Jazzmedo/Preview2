@@ -115,9 +115,13 @@ nav a {
 
 /* Footer */
 footer {
-    background-color: #1e1e1e;
     color: #888;
     padding: 0;
+    background-position-y: 80%;
+}
+
+footer p, footer span{
+    color: #fff;
 }
 
 .footer-content {
@@ -142,6 +146,7 @@ footer {
 .contact-info p {
     margin: 10px 0;
     display: flex;
+    color: #fff;
     align-items: flex-start;
     gap: 10px;
     line-height: 1.6;
