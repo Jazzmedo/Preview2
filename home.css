@@ -834,7 +834,7 @@ html {
 }
 
 /* Apply animation to header boy image */
-img[src*="HP BOY header.png"], img[alt*="Visit Us"] {
+img[src*="boy.png"], img[alt*="Visit Us"] {
     animation: float-circle 2.5s ease infinite;
 }
 
